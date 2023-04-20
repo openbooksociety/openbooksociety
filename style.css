@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Maax;
+  src: url("public/fonts/maax-mono-rg.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Maax;
+  src: url("public/fonts/maax-mono-rg-it.woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Maax;
+  src: url("public/fonts/maax-mono-md.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Maax;
+  src: url("public/fonts/maax-mono-md-it.woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Maax;
+  font-weight: 500;
+}
+
+.section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+}
+
+.section.left {
+    left: 0;
+}
+
+.section.right {
+    right: 0;
+}
+
+.header{
+    font-size: 4.3vw;
+    position: sticky;
+    top: 0;
+    line-height: 5vw;
+}
+
+.text-content{
+    font-size: 2rem;
+}
