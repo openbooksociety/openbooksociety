@@ -1,25 +1,25 @@
 let LANG = "de";
-let contentDE = fetchData("de");
-let contentEN = fetchData("en");
-
 populate();
+document.addEventListener("load", populate);
 
 let langButton = document.querySelector(".language-toggle");
 document.addEventListener("click", toggleLanguage);
 
-async function fetchData(lang) {
-  let data = await fetch("content-" + lang + ".json");
+async function fetchData() {
+  let data = await fetch("content-" + LANG + ".json");
   let json = await data.json();
-  return json.res;
+  return json;
 }
 
 function toggleLanguage() {
   LANG = LANG === "de" ? "en" : "de";
-  LANG === "de" ? populate(contentEN) : populate(contentDE);
-  console.log(contentDE);
+  console.log(LANG);
+  populate();
 }
 
-async function populate(data) {
-  let contentElement = document.querySelector("#text-content");
-  contentElement.innerHTML = data.content;
+async function populate() {
+  data = await fetchData();
+  console.log(data);
+  document.querySelector("#text-content").innerHTML = data.content.text;
+  document.querySelector("#text-content").innerHTML = data.content.text;
 }

@@ -1,7 +1,9 @@
 {
   "general": {
     "title": "Open Book Society e.V",
-    "mainText": "sss",
+    "navAbout": "About",
+    "navMember": "Membership <br /><span style='margin-left: 5vw'></span> and donate",
+    "navLanguage": "Deutsch?",
     "imprint": ""
   },
   "content": {
