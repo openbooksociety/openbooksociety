@@ -35,32 +35,49 @@
 body {
   font-family: Maax;
   font-weight: 500;
-}
-
-.section {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 50%;
+  display: grid;
+  grid-template-areas:
+    "title menu"
+    "content menu";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr;
+  gap: 10px;
   padding: 10px;
 }
 
+@media (max-width: 1000px) {
+  body {
+    grid-template-areas:
+      "title"
+      "menu"
+      "content";
+  }
+}
+
 .section.left {
-    left: 0;
+  left: 0;
+  grid-area: content;
+  font-size: 2rem;
 }
 
 .section.right {
-    right: 0;
+  right: 0;
 }
 
-.header{
-    font-size: 4.3vw;
-    position: sticky;
-    top: 0;
-    line-height: 5vw;
+.header {
+  font-size: 4.3vw;
+  position: sticky;
+  top: 0;
+  line-height: 5vw;
 }
 
-.text-content{
-    font-size: 2rem;
+.header.title {
+  grid-area: title;
+}
+
+.header.menu {
+  grid-area: menu;
+}
+
+.nav-link {
 }
