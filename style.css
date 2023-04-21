@@ -1,20 +1,6 @@
 @font-face {
   font-family: Maax;
-  src: url("public/fonts/maax-mono-rg.woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Maax;
-  src: url("public/fonts/maax-mono-rg-it.woff");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Maax;
-  src: url("public/fonts/maax-mono-md.woff");
+  src: url("public/fonts/maax-md.woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -45,10 +31,13 @@ body {
   font-weight: 500;
 }
 
-a.link,
-a.nav-link {
+.link,
+.nav-link {
   cursor: pointer;
   display: block;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 p {
@@ -58,10 +47,14 @@ p {
 .tab {
   margin-left: 8vw;
 }
-
-#text-content a {
+a {
   text-decoration: none !important;
   color: black !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: black !important;
+  font-style: italic;
 }
 
 #text-content a::before {
@@ -81,7 +74,6 @@ p {
   grid-template-rows: min-content 1fr min-content;
   gap: 10px;
   padding: 10px;
-  overflow: scroll;
 }
 
 .section.left {
@@ -127,6 +119,7 @@ p {
 }
 
 .nav-link {
+  display: block;
   cursor: pointer;
   transition: color 150ms ease-out;
 }
@@ -148,15 +141,17 @@ p {
   margin-bottom: 0px !important;
 }
 
-#about-link:hover {
-  color: var(--4);
-}
+@media (min-width: 1000px) {
+  #about-link:hover {
+    color: var(--4);
+  }
 
-#member-link:hover {
-  color: var(--2);
-}
-#language-toggle:hover {
-  color: var(--3);
+  #member-link:hover {
+    color: var(--2);
+  }
+  #language-toggle:hover {
+    color: var(--3);
+  }
 }
 
 #arrow {
@@ -173,11 +168,11 @@ p {
   left: 50vw;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
   .content-grid {
     min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr min-content;
+    grid-template-rows: min-content min-content 1fr min-content;
     grid-template-areas:
       "title"
       "menu"
@@ -199,6 +194,7 @@ p {
     line-height: 0vw !important;
     height: 8vw;
     margin-top: 4vw;
+    padding-top: 10px;
     top: 4vw !important;
   }
   .header.menu {

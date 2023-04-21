@@ -4,13 +4,19 @@ let r = document.querySelector(":root");
 
 populateNav();
 populateContent();
-populateImprint() 
+populateImprint();
 populateGlyphCanvas();
 
 let menu = document.querySelector(".header.menu");
+
+menu.querySelectorAll(".nav-link").forEach((elem) => {
+  elem.addEventListener("click", (e) => {
+    menu.classList.contains("stacked") ? toggleMenuStack() : togglePages(e);
+  });
+});
 menu.addEventListener("mouseenter", toggleMenuStack);
 menu.addEventListener("mouseleave", toggleMenuStack);
-menu.addEventListener("click", togglePages);
+document.addEventListener("scroll", stackMenu);
 
 let title = document.querySelector(".header.title");
 title.addEventListener("click", togglePages);
@@ -26,7 +32,6 @@ async function fetchData() {
 
 function toggleLanguage() {
   LANG = LANG === "de" ? "en" : "de";
-  console.log(LANG);
   populateNav();
   populateContent();
 }
@@ -38,10 +43,12 @@ function togglePages(e) {
   populateGlyphCanvas();
 }
 
-function toggleMenuStack(e) {
-  e.target.classList.contains("stacked")
-    ? e.target.classList.remove("stacked")
-    : e.target.classList.add("stacked");
+function toggleMenuStack() {
+  menu.classList.toggle("stacked");
+}
+
+function stackMenu() {
+  menu.classList.add("stacked");
 }
 
 function getRandomCSSColor() {
@@ -66,7 +73,6 @@ async function populateImprint() {
   let data = await fetchData();
   setContentofID("#imprint-link", data.general.navImprint);
   setContentofID("#privacy-link", data.general.navData);
-
 }
 
 function setContentofID(id, content) {
