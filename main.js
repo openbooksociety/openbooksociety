@@ -12,12 +12,12 @@ let navLinks = menu.querySelectorAll(".nav-link");
 
 navLinks.forEach((elem) => {
   elem.addEventListener("click", (e) => {
-    menu.classList.contains("stacked") ? toggleMenuStack() : togglePages(e);
+    menu.classList.contains("stacked") ? unstackMenu() : togglePages(e);
   });
 });
 
-menu.addEventListener("mouseenter", toggleMenuStack);
-menu.addEventListener("mouseleave", toggleMenuStack);
+menu.addEventListener("mouseenter", unstackMenu);
+menu.addEventListener("mouseleave", stackMenu);
 document.addEventListener("scroll", stackMenu);
 
 let title = document.querySelector(".header.title");
@@ -49,8 +49,8 @@ function togglePages(e) {
   populateGlyphCanvas();
 }
 
-function toggleMenuStack() {
-  menu.classList.toggle("stacked");
+function unstackMenu() {
+  menu.classList.remove("stacked");
 }
 
 function stackMenu() {
@@ -93,11 +93,12 @@ function populateGlyphCanvas() {
     let elem = document.createElement("div");
     elem.classList.add("random-glyph");
     elem.innerHTML = getRandomGlyph();
-    elem.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+    elem.style.left = Math.floor(Math.random() * window.innerWidth) - 30 + "px";
     elem.style.top =
       Math.floor(
         Math.random() * (window.innerHeight - 0.2 * window.innerWidth) +
-          0.2 * window.innerWidth
+          0.2 * window.innerWidth -
+          30
       ) + "px";
 
     glyphCanvas.appendChild(elem);
