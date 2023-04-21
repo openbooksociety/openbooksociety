@@ -141,6 +141,17 @@ a:hover {
   margin-bottom: 0px !important;
 }
 
+#about-link.active {
+  color: var(--4);
+}
+
+#member-link.active {
+  color: var(--2);
+}
+#language-toggle.active {
+  color: var(--3);
+}
+
 @media (min-width: 1000px) {
   #about-link:hover {
     color: var(--4);
@@ -184,6 +195,10 @@ a:hover {
     font-size: 8vw !important;
     line-height: 8vw !important;
     height: auto !important;
+  }
+  .random-glyph {
+    font-size: 8vw !important;
+    position: absolute;
   }
 
   .header.menu {
