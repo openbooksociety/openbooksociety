@@ -1,9 +1,15 @@
 let LANG = "de";
+let r = document.querySelector(":root");
+
 populate();
 document.addEventListener("load", populate);
 
-let langButton = document.querySelector(".language-toggle");
-document.addEventListener("click", toggleLanguage);
+let menu = document.querySelector(".header.menu");
+menu.addEventListener("mouseenter", toggleMenuStack);
+menu.addEventListener("mouseleave", toggleMenuStack);
+
+let langButton = document.querySelector("#language-toggle");
+langButton.addEventListener("click", toggleLanguage);
 
 async function fetchData() {
   let data = await fetch("content-" + LANG + ".json");
@@ -17,9 +23,26 @@ function toggleLanguage() {
   populate();
 }
 
+function toggleMenuStack(e) {
+  e.target.classList.contains("stacked")
+    ? e.target.classList.remove("stacked")
+    : e.target.classList.add("stacked");
+}
+
+function getRandomCSSColor() {
+  let rand = Math.ceil(Math.random() * 5);
+  return getComputedStyle(r).getPropertyValue("--" + rand);
+}
+
 async function populate() {
   data = await fetchData();
-  console.log(data);
-  document.querySelector("#text-content").innerHTML = data.content.text;
-  document.querySelector("#text-content").innerHTML = data.content.text;
+
+  setContentofID("#text-content", data.content.text);
+  setContentofID("#member-link", data.general.navMember);
+  setContentofID("#language-toggle", data.general.navLanguage);
+  setContentofID("#about-link", data.general.navAbout);
+}
+
+function setContentofID(id, content) {
+  document.querySelector(id).innerHTML = content;
 }

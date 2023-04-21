@@ -26,6 +26,14 @@
   font-style: italic;
 }
 
+:root {
+  --1: #dd1c1aff;
+  --2: #41bbd9ff;
+  --3: #ffc145ff;
+  --4: #139a43ff;
+  --5: #8a1c7cff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +43,9 @@
 body {
   font-family: Maax;
   font-weight: 500;
+}
+
+.content-grid{
   display: grid;
   grid-template-areas:
     "title menu"
@@ -46,7 +57,7 @@ body {
 }
 
 @media (max-width: 1000px) {
-  body {
+  .content-grid {
     grid-template-areas:
       "title"
       "menu"
@@ -57,7 +68,7 @@ body {
 .section.left {
   left: 0;
   grid-area: content;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .section.right {
@@ -69,6 +80,9 @@ body {
   position: sticky;
   top: 0;
   line-height: 5vw;
+  height: min-content;
+  transition: line-height 400ms cubic-bezier(0, 0, 0.21, 1.01),
+    margin-top 400ms ease-out, top 400ms ease-out;
 }
 
 .header.title {
@@ -77,7 +91,31 @@ body {
 
 .header.menu {
   grid-area: menu;
+  margin-top: 0;
+  top: 0;
 }
 
 .nav-link {
+  cursor: pointer;
+  transition: color 150ms ease-out;
+}
+
+.header.menu.stacked {
+  line-height: 0px;
+  height: 4.3vw;
+  margin-top: 2.15vw;
+  top: 2.15vw;
+  transition: line-height 400ms cubic-bezier(0, 0, 0.21, 1.01),
+    margin-top 400ms ease-out, top 400ms ease-out;
+}
+
+#about-link:hover {
+  color: var(--4);
+}
+
+#member-link:hover {
+  color: var(--2);
+}
+#language-toggle:hover {
+  color: var(--3);
 }
