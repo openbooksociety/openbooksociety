@@ -9,26 +9,25 @@
   </head>
   <body>
     <div class="content-grid">
-      <div class="header title">Open Book Society e.V.</div>
+      <a class="header title link">Open Book Society e.V.</a>
       <div class="header menu stacked">
-        <div>
-          <div id="about-link" class="nav-link">About us</div>
-        </div>
-        <div>
-          <div id="member-link" class="nav-link">
-            Mitglied werden <br /><span style="margin-left: 5vw"></span> und
-            spenden
-          </div>
-        </div>
-        <div>
-          <div id="language-toggle" class="nav-link">English?</div>
-        </div>
+        <div id="arrow">↖</div>
+        <a id="about-link" class="nav-link link" data-href="about">About us</a>
+        <a id="member-link" class="nav-link link" data-href="memberAndDonate">
+          Mitglied werden <br /><span style="margin-left: 5vw"></span> und
+          spenden
+        </a>
+        <a id="language-toggle" class="nav-link">English?</a>
       </div>
       <div class="section left">
-        <div id="text-content">jsjjs</div>
+        <div id="text-content"></div>
       </div>
-      <div class="section right"></div>
+      <div class="imprint-container">
+        <div id="imprint-link"></div>
+        <div id="privacy-link"></div>
+      </div>
     </div>
+    <div id="glyph-canvas"></div>
   </body>
   <script src="main.js"></script>
 </html>
