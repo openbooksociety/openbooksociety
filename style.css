@@ -71,7 +71,6 @@ p {
 }
 
 .content-grid {
-  position: fixed;
   inset: 0;
   display: grid;
   grid-template-areas:
@@ -92,7 +91,8 @@ p {
 }
 
 #text-content {
-  margin-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
 }
 
 #glyph-canvas {
@@ -167,14 +167,17 @@ p {
 
 .imprint-container {
   grid-area: imprint;
-  inset: 10px;
-  top: inherit;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  left: 50vw;
 }
 
 @media (max-width: 1000px) {
   .content-grid {
+    min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: min-content 1fr min-content;
     grid-template-areas:
       "title"
       "menu"
@@ -214,5 +217,12 @@ p {
     position: absolute;
     left: 65vw;
     top: 2vw;
+  }
+
+  .imprint-container {
+    grid-area: imprint;
+    position: relative;
+    padding: 0px;
+    left: inherit;
   }
 }
