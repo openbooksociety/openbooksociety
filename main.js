@@ -4,7 +4,7 @@ let r = document.querySelector(":root");
 
 populateNav();
 populateContent();
-populateGlyphCanvas();
+// populateGlyphCanvas();
 
 let menu = document.querySelector(".header.menu");
 let navLinks = menu.querySelectorAll(".menu .nav-link");
@@ -20,8 +20,10 @@ subNavLinks.forEach((elem) => {
   elem.addEventListener("click", togglePages);
 });
 
-menu.addEventListener("mouseenter", unstackMenu);
-menu.addEventListener("mouseleave", stackMenu);
+if (!isTouchDevice()) {
+  menu.addEventListener("mouseenter", unstackMenu);
+  menu.addEventListener("mouseleave", stackMenu);
+}
 document.addEventListener("scroll", stackMenu);
 
 let title = document.querySelector(".header.title");
@@ -45,13 +47,13 @@ function toggleLanguage() {
 function togglePages(e) {
   if (!e.target.classList.contains("link")) return;
   PAGE = e.target.getAttribute("data-href");
-  console.log(PAGE)
+  console.log(PAGE);
   navLinks.forEach((elem) => {
     elem.classList.remove("active");
   });
   e.target.classList.add("active");
   populateContent();
-  populateGlyphCanvas();
+  // populateGlyphCanvas();
 }
 
 function unstackMenu() {
@@ -70,7 +72,8 @@ function getRandomCSSColor() {
 async function populateNav() {
   let data = await fetchData();
 
-  setContentofID("#member-link", data.general.navMember);
+  setContentofID("#members-link", data.general.navMembers);
+  setContentofID("#join-link", data.general.navJoin);
   setContentofID("#language-toggle", data.general.navLanguage);
   setContentofID("#about-link", data.general.navAbout);
   setContentofID("#imprint-link", data.general.navImprint);
@@ -117,4 +120,12 @@ function getRandomGlyph() {
     n = Math.floor(Math.random() * 126);
   }
   return String.fromCharCode(n);
+}
+
+function isTouchDevice() {
+  return (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
 }

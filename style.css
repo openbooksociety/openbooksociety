@@ -45,7 +45,7 @@ p {
 }
 
 .tab {
-  margin-left: 8vw;
+  margin-left: 4vw;
 }
 a {
   text-decoration: none !important;
@@ -73,7 +73,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content 1fr min-content;
   gap: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .section.left {
@@ -85,6 +85,7 @@ a:hover {
 #text-content {
   padding-top: 1rem;
   padding-bottom: 4rem;
+  padding-left: 4px;
 }
 
 #glyph-canvas {
@@ -145,10 +146,11 @@ a:hover {
   color: var(--4);
 }
 
-#member-link.active {
+#members-link.active {
   color: var(--2);
 }
-#language-toggle.active {
+
+#join-link.active {
   color: var(--3);
 }
 
@@ -157,10 +159,10 @@ a:hover {
     color: var(--4);
   }
 
-  #member-link:hover {
+  #members-link:hover {
     color: var(--2);
   }
-  #language-toggle:hover {
+  #join-link:hover {
     color: var(--3);
   }
 }
@@ -200,42 +202,42 @@ a:hover {
   height: 10px;
 }
 
-.top-left-1{
+.top-left-1 {
   top: 20px;
   left: 0;
 }
 
-.top-left-2{
+.top-left-2 {
   top: 0px;
   left: 20px;
 }
 
-.top-right-1{
+.top-right-1 {
   top: 20px;
   right: 0;
 }
 
-.top-right-2{
+.top-right-2 {
   top: 0px;
   right: 20px;
 }
 
-.bottom-left-1{
+.bottom-left-1 {
   bottom: 20px;
   left: 0;
 }
 
-.bottom-left-2{
+.bottom-left-2 {
   bottom: 0px;
   left: 20px;
 }
 
-.bottom-right-1{
+.bottom-right-1 {
   bottom: 20px;
   right: 0;
 }
 
-.bottom-right-2{
+.bottom-right-2 {
   bottom: 0px;
   right: 20px;
 }
