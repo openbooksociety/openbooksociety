@@ -100,7 +100,7 @@ a:hover {
 }
 
 .header {
-  font-size: 4.3vw;
+  font-size: 4.5vw;
   position: sticky;
   top: 10px;
   line-height: 4vw;
@@ -181,6 +181,14 @@ a:hover {
   left: 50vw;
 }
 
+#header-text-container {
+  position: fixed;
+  inset: 12px;
+  font-size: .9rem;
+  text-align: center;
+  pointer-events: none;
+}
+
 #schnittmarken-canvas {
   position: fixed;
   inset: 0;
@@ -259,6 +267,7 @@ a:hover {
     line-height: 8vw !important;
     height: auto !important;
   }
+
   .random-glyph {
     font-size: 8vw !important;
     position: absolute;
@@ -275,6 +284,7 @@ a:hover {
     padding-top: 10px;
     top: 4vw !important;
   }
+
   .header.menu {
     margin-bottom: 4vw;
   }

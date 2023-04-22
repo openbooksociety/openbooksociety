@@ -72,6 +72,7 @@ function getRandomCSSColor() {
 async function populateNav() {
   let data = await fetchData();
 
+  setContentofID("#header-text-container", data.general.header);
   setContentofID("#members-link", data.general.navMembers);
   setContentofID("#join-link", data.general.navJoin);
   setContentofID("#language-toggle", data.general.navLanguage);
