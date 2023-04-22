@@ -4,7 +4,6 @@ let r = document.querySelector(":root");
 
 populateNav();
 populateContent();
-populateImprint();
 populateGlyphCanvas();
 
 let menu = document.querySelector(".header.menu");
@@ -74,17 +73,13 @@ async function populateNav() {
   setContentofID("#member-link", data.general.navMember);
   setContentofID("#language-toggle", data.general.navLanguage);
   setContentofID("#about-link", data.general.navAbout);
+  setContentofID("#imprint-link", data.general.navImprint);
+  setContentofID("#privacy-link", data.general.navData);
 }
 
 async function populateContent() {
   let data = await fetchData();
   setContentofID("#text-content", data.content[PAGE]);
-}
-
-async function populateImprint() {
-  let data = await fetchData();
-  setContentofID("#imprint-link", data.general.navImprint);
-  setContentofID("#privacy-link", data.general.navData);
 }
 
 function setContentofID(id, content) {
