@@ -8,12 +8,17 @@ populateImprint();
 populateGlyphCanvas();
 
 let menu = document.querySelector(".header.menu");
-let navLinks = menu.querySelectorAll(".nav-link");
+let navLinks = menu.querySelectorAll(".menu .nav-link");
 
 navLinks.forEach((elem) => {
   elem.addEventListener("click", (e) => {
     menu.classList.contains("stacked") ? unstackMenu() : togglePages(e);
   });
+});
+
+let subNavLinks = document.querySelectorAll(".imprint-container .nav-link");
+subNavLinks.forEach((elem) => {
+  elem.addEventListener("click", togglePages);
 });
 
 menu.addEventListener("mouseenter", unstackMenu);
@@ -41,6 +46,7 @@ function toggleLanguage() {
 function togglePages(e) {
   if (!e.target.classList.contains("link")) return;
   PAGE = e.target.getAttribute("data-href");
+  console.log(PAGE)
   navLinks.forEach((elem) => {
     elem.classList.remove("active");
   });
