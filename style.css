@@ -184,9 +184,14 @@ a:hover {
 #header-text-container {
   position: fixed;
   inset: 12px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: center;
   pointer-events: none;
+}
+@media (max-width: 999px) {
+  #header-text-container {
+    display: none;
+  }
 }
 
 #schnittmarken-canvas {
