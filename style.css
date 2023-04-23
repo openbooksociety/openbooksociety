@@ -79,7 +79,8 @@ a:hover {
 .section.left {
   left: 0;
   grid-area: content;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 
 #text-content {
@@ -167,10 +168,16 @@ a:hover {
   }
 }
 
-#arrow {
+.stacked .arrow {
+  transform: rotate(0);
+  transition: all 300ms ease-out;
+}
+.arrow {
+  transform: rotate(-45deg);
   position: absolute;
-  left: 40vw;
+  left: 30vw;
   top: 2.5vw;
+  transition: all 300ms ease-out;
 }
 
 .imprint-container {
@@ -179,6 +186,8 @@ a:hover {
   bottom: 0;
   padding: 10px;
   left: 50vw;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 #header-text-container {
