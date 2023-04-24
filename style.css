@@ -180,6 +180,15 @@ a:hover {
   transition: all 300ms ease-out;
 }
 
+@media (min-width: 1000px) {
+  .arrow {
+    left: 60vw;
+    top: 4vw;
+  }
+  
+}
+
+
 .imprint-container {
   grid-area: imprint;
   position: fixed;
