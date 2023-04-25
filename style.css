@@ -123,12 +123,6 @@ a:hover {
   top: var(--headerTopMargin);
 }
 
-.nav-link {
-  display: block;
-  cursor: pointer;
-  transition: color 150ms ease-out;
-}
-
 .header.menu.stacked {
   line-height: 0px;
   height: 4vw;
@@ -144,6 +138,19 @@ a:hover {
 
 .header.menu div {
   margin-bottom: 0px !important;
+}
+
+.nav-link {
+  display: block;
+  cursor: pointer;
+  transition: color 150ms ease-out;
+  position: relative;
+  z-index: 0;
+}
+
+
+.nav-link.active {
+  z-index: 10;
 }
 
 #about-link.active {
