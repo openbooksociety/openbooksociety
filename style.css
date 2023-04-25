@@ -1,13 +1,15 @@
 @font-face {
   font-family: Maax;
-  src: url("public/fonts/maax-md.woff");
+  src: url("public/fonts/MaaxRounded-Medium-205TF.woff2") format("woff2"),
+    url("public/fonts/MaaxRounded-Medium-205TF.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: Maax;
-  src: url("public/fonts/maax-mono-md-it.woff");
+  src: url("public/fonts/MaaxRounded-Medium-Italic-205TF.woff2") format("woff2"),
+    url("public/fonts/MaaxRounded-Medium-Italic-205TF.woff") format("woff");
   font-weight: 500;
   font-style: italic;
 }
@@ -18,6 +20,7 @@
   --3: #ffc145ff;
   --4: #139a43ff;
   --5: #8a1c7cff;
+  --headerTopMargin: 15px;
 }
 
 * {
@@ -103,7 +106,7 @@ a:hover {
 .header {
   font-size: 4.5vw;
   position: sticky;
-  top: 10px;
+  top: var(--headerTopMargin);
   line-height: 4vw;
   height: min-content;
   transition: line-height 350ms ease-out, margin-top 350ms ease-out,
@@ -117,7 +120,7 @@ a:hover {
 .header.menu {
   grid-area: menu;
   margin-top: 0;
-  top: 10px;
+  top: var(--headerTopMargin);
 }
 
 .nav-link {
@@ -130,7 +133,7 @@ a:hover {
   line-height: 0px;
   height: 4vw;
   margin-top: 2vw;
-  top: calc(2vw + 10px);
+  top: calc(2vw + var(--headerTopMargin));
   transition: line-height 350ms ease-out, margin-top 350ms ease-out,
     top 350ms ease-out;
 }
@@ -180,14 +183,12 @@ a:hover {
   transition: all 300ms ease-out;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
   .arrow {
     left: 60vw;
     top: 4vw;
   }
-  
 }
-
 
 .imprint-container {
   grid-area: imprint;
