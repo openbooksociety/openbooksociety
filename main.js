@@ -43,7 +43,7 @@ function toggleLanguage() {
   LANG = LANG === "de" ? "en" : "de";
   populateNav();
   populateContent();
-} 
+}
 
 function togglePages(e) {
   if (!e.target.classList.contains("link")) return;
@@ -85,6 +85,8 @@ async function populateNav() {
 async function populateContent() {
   let data = await fetchData();
   setContentofID("#text-content", data.content[PAGE]);
+  document.querySelector("#text-content").classList = PAGE;
+
 }
 
 function setContentofID(id, content) {

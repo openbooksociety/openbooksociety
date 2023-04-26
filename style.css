@@ -20,6 +20,10 @@
   --2: #41bbd9;
   --link-color: #ffc145;
   --headerTopMargin: 15px;
+  --font-size-xs: 0.9rem;
+  --font-size-sm: 1.2rem;
+  --font-size-md: 1.5rem;
+
 }
 
 * {
@@ -73,6 +77,11 @@ a:hover {
   font-style: normal;
 }
 
+#text-content.imprint, #text-content.privacy{
+  font-size: var(--font-size-sm);
+  line-height: var(--font-size-sm);
+}
+
 .content-grid {
   inset: 0;
   display: grid;
@@ -89,7 +98,7 @@ a:hover {
 .section.left {
   left: 0;
   grid-area: content;
-  font-size: 1.5rem;
+  font-size: var(--font-size-md);
   line-height: 1.8rem;
 }
 
@@ -210,15 +219,15 @@ a:hover {
   bottom: 0;
   padding: 10px;
   left: 50vw;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: var(--font-size-sm);
+  line-height: var(--font-size-md);;
 }
 
 #header-text-container {
   position: fixed;
   inset: 12px;
   padding: 0 6.3vw;
-  font-size: 0.9rem;
+  font-size: var(--font-size-xs);
   text-align: center;
   pointer-events: none;
 }
@@ -321,7 +330,7 @@ a:hover {
     line-height: 0vw !important;
     height: 8vw;
     margin-top: 4vw;
-    padding-top: 10px;
+    padding-top: var(--headerTopMargin);
     top: 4vw !important;
   }
 
