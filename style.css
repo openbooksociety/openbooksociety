@@ -139,12 +139,6 @@ a:hover {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  -webkit-transition: line-height 350ms ease-out, margin-top 350ms ease-out,
-    top 350ms ease-out;
-  -o-transition: line-height 350ms ease-out, margin-top 350ms ease-out,
-    top 350ms ease-out;
-  transition: line-height 350ms ease-out, margin-top 350ms ease-out,
-    top 350ms ease-out;
 }
 
 .header.title {
@@ -157,27 +151,20 @@ a:hover {
   top: var(--headerTopMargin);
 }
 
-.header.menu.stacked {
-  /* line-height: 0px;
-  height: var(--header-lineHeight);
-  margin-top: 2.2vw;
-  top: calc(2.2vw + var(--headerTopMargin)); */
-}
-
 .header.menu.stacked div {
   margin-bottom: 1vw;
   top: 0 !important;
-  -webkit-transition: top 350ms ease-out;
-  -o-transition: top 350ms ease-out;
-  transition: top 350ms ease-out;
+  -webkit-transition: top 350ms ease-out, color 150ms ease-out;
+  -o-transition: top 350ms ease-out, color 150ms ease-out;
+  transition: top 350ms ease-out, color 150ms ease-out;
 }
 
 .header.menu div {
   width: 100%;
   position: absolute;
-  -webkit-transition: top 350ms ease-out;
-  -o-transition: top 350ms ease-out;
-  transition: top 350ms ease-out;
+  -webkit-transition: top 350ms ease-out, color 150ms ease-out;
+  -o-transition: top 350ms ease-out, color 150ms ease-out;
+  transition: top 350ms ease-out, color 150ms ease-out;
 }
 
 .header.menu .second-line {
@@ -489,4 +476,12 @@ a:hover {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
   }
+}
+
+.italic-loader{
+  font-style: italic;
+  color: transparent;
+  pointer-events: none;
+  position: absolute;
+  
 }
