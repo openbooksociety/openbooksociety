@@ -6,7 +6,7 @@
   },
   "nav": {
     "about": "About us",
-    "joinOrDonate": "Join us<br/> <span class='tab'></span> or donate",
+    "joinOrDonate": "Join us<br/> <span class='second-line'>or donate</span>",
     "members": "Our members",
     "imprint": "Imprint",
     "privacy": "Privacy"
