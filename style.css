@@ -15,11 +15,11 @@
 }
 
 :root {
-  --1: #dd1c1aff;
-  --2: #41bbd9ff;
-  --3: #ffc145ff;
-  --4: #139a43ff;
-  --5: #8a1c7cff;
+  --0: #ffc145;
+  --1: #dd1c1a;
+  --2: #41bbd9;
+  --link-color: #ffc145:
+
   --headerTopMargin: 15px;
 }
 
@@ -47,6 +47,10 @@ p {
   margin-bottom: 1.3rem;
 }
 
+ul {
+  padding-inline-start: 40px;
+}
+
 .tab {
   margin-left: 4vw;
 }
@@ -62,8 +66,12 @@ a:hover {
 
 #text-content a::before {
   content: "→" !important;
-  color: var(--1);
+  color: var(--link-color);
   margin-right: 3px;
+}
+
+#text-content a:hover::before {
+  font-style: normal;
 }
 
 .content-grid {
@@ -104,10 +112,11 @@ a:hover {
 }
 
 .header {
-  font-size: 4.5vw;
+  font-size: 4.8vw;
+  letter-spacing: -3px;
   position: sticky;
   top: var(--headerTopMargin);
-  line-height: 4vw;
+  line-height: 4.4vw;
   height: min-content;
   transition: line-height 350ms ease-out, margin-top 350ms ease-out,
     top 350ms ease-out;
@@ -125,9 +134,9 @@ a:hover {
 
 .header.menu.stacked {
   line-height: 0px;
-  height: 4vw;
-  margin-top: 2vw;
-  top: calc(2vw + var(--headerTopMargin));
+  height: 4.4vw;
+  margin-top: 2.2vw;
+  top: calc(2.2vw + var(--headerTopMargin));
   transition: line-height 350ms ease-out, margin-top 350ms ease-out,
     top 350ms ease-out;
 }
@@ -148,33 +157,31 @@ a:hover {
   z-index: 0;
 }
 
-
 .nav-link.active {
   z-index: 10;
 }
 
 #about-link.active {
-  color: var(--4);
+  color: var(--0);
+}
+
+#join-link.active {
+  color: var(--1);
 }
 
 #members-link.active {
   color: var(--2);
 }
 
-#join-link.active {
-  color: var(--3);
-}
-
 @media (min-width: 1000px) {
   #about-link:hover {
-    color: var(--4);
-  }
-
-  #members-link:hover {
-    color: var(--2);
+    color: var(--0);
   }
   #join-link:hover {
-    color: var(--3);
+    color: var(--1);
+  }
+  #members-link:hover {
+    color: var(--2);
   }
 }
 
@@ -183,9 +190,10 @@ a:hover {
   transition: all 300ms ease-out;
 }
 .arrow {
+  display: none;
   transform: rotate(-45deg);
   position: absolute;
-  left: 30vw;
+  left: 32vw;
   top: 2.5vw;
   transition: all 300ms ease-out;
 }
@@ -210,6 +218,7 @@ a:hover {
 #header-text-container {
   position: fixed;
   inset: 12px;
+  padding: 0 6.3vw;
   font-size: 0.9rem;
   text-align: center;
   pointer-events: none;
@@ -297,6 +306,7 @@ a:hover {
     font-size: 8vw !important;
     line-height: 8vw !important;
     height: auto !important;
+    letter-spacing: -1px;
   }
 
   .random-glyph {
