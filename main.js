@@ -2,6 +2,7 @@ let LANG = "en";
 let PAGE = "";
 let r = document.querySelector(":root");
 
+setRandomCSSColors(3);
 populateNav();
 populateContent();
 // populateGlyphCanvas();
@@ -42,13 +43,18 @@ function toggleLanguage() {
   LANG = LANG === "de" ? "en" : "de";
   populateNav();
   populateContent();
-}
+} 
 
 function togglePages(e) {
   if (!e.target.classList.contains("link")) return;
   PAGE = e.target.getAttribute("data-href");
   console.log(PAGE);
-  navLinks.forEach((elem) => {
+  navLinks.forEach((elem, i) => {
+    if (elem == e.target)
+      r.style.setProperty(
+        "--link-color",
+        getComputedStyle(r).getPropertyValue("--" + i)
+      );
     elem.classList.remove("active");
   });
   e.target.classList.add("active");
@@ -64,21 +70,16 @@ function stackMenu() {
   menu.classList.add("stacked");
 }
 
-function getRandomCSSColor() {
-  let rand = Math.ceil(Math.random() * 5);
-  return getComputedStyle(r).getPropertyValue("--" + rand);
-}
-
 async function populateNav() {
   let data = await fetchData();
 
   setContentofID("#header-text-container", data.general.header);
-  setContentofID("#members-link", data.general.navMembers);
-  setContentofID("#join-link", data.general.navJoin);
+  setContentofID("#members-link", data.nav.members);
+  setContentofID("#join-link", data.nav.joinOrDonate);
   setContentofID("#language-toggle", data.general.navLanguage);
-  setContentofID("#about-link", data.general.navAbout);
-  setContentofID("#imprint-link", data.general.navImprint);
-  setContentofID("#privacy-link", data.general.navData);
+  setContentofID("#about-link", data.nav.about);
+  setContentofID("#imprint-link", data.nav.imprint);
+  setContentofID("#privacy-link", data.nav.privacy);
 }
 
 async function populateContent() {
@@ -129,4 +130,21 @@ function isTouchDevice() {
     navigator.maxTouchPoints > 0 ||
     navigator.msMaxTouchPoints > 0
   );
+}
+
+function setRandomCSSColors(amount) {
+  for (let i = 0; i < amount; i++) {
+    r.style.setProperty("--" + i, get_random_color());
+  }
+}
+
+function rand(min, max) {
+  return min + Math.random() * (max - min);
+}
+
+function get_random_color() {
+  let h = Math.floor(rand(0, 360));
+  let s = Math.floor(rand(50, 100));
+  let l = Math.floor(rand(30, 70));
+  return "hsl(" + h + "deg," + s + "%," + l + "%)";
 }
