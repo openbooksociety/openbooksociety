@@ -4,9 +4,8 @@ let PAGE = "";
 let r = document.querySelector(":root");
 
 window.addEventListener("load", () => {
-
-  PAGE = window.location.hash.replaceAll("#", "")
-  console.log(PAGE)
+  PAGE = window.location.hash.replaceAll("#", "");
+  console.log(PAGE);
   if (PAGE != "")
     document
       .querySelector("[data-href='" + PAGE + "']")
