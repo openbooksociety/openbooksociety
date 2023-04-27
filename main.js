@@ -4,6 +4,11 @@ let PAGE = "";
 let r = document.querySelector(":root");
 
 window.addEventListener("load", () => {
+  PAGE = window.location.pathname.replaceAll("/", "");
+  if (PAGE != "")
+    document
+      .querySelector("[data-href='" + PAGE + "']")
+      .classList.add("active");
   populateNav();
   setRandomCSSColors(3);
   populateContent();
