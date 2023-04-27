@@ -10,6 +10,7 @@ window.addEventListener("load", () => {
     document
       .querySelector("[data-href='" + PAGE + "']")
       .classList.add("active");
+      
   populateNav();
   setRandomCSSColors(3);
   populateContent();
