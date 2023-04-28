@@ -69,11 +69,13 @@ a.nav-link {
   user-select: none; /* Standard syntax */
 }
 
-.header a.nav-link:hover, .title.link:hover {
+.header a.nav-link:hover,
+.title.link:hover {
   font-style: normal;
-
 }
-
+#text-content a:hover {
+  letter-spacing: -0.0035rem;
+}
 #text-content a::before {
   content: "→" !important;
   color: var(--link-color);
@@ -483,10 +485,9 @@ a.nav-link {
   }
 }
 
-.italic-loader{
+.italic-loader {
   font-style: italic;
   color: transparent;
   pointer-events: none;
   position: absolute;
-  
 }
