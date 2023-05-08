@@ -52,9 +52,16 @@ async function fetchData() {
 }
 
 async function fetchMDData(slug) {
-  let data = await fetch("https://raw.githubusercontent.com/schnavy/openbooksociety/develop/content/" + slug + "-" + LANG + ".md");
+  if (slug == "") return "";
+  let data = await fetch(
+    "https://raw.githubusercontent.com/schnavy/openbooksociety/develop/pages/" +
+      slug +
+      "-" +
+      LANG +
+      ".md"
+  );
   let text = await data.text();
-  let html = MarkdownToHtml.parse(text)
+  let html = MarkdownToHtml.parse(text);
   console.log(html);
   return html;
 }
