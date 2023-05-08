@@ -45,7 +45,7 @@ fetchMDData("about");
 // ------ functions ------
 
 async function fetchData() {
-  let data = await fetch("content-" + LANG + ".json");
+  let data = await fetch("snippets/content-" + LANG + ".json");
   let json = await data.json();
 
   return json;
