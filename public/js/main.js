@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
     document
       .querySelector("[data-href='" + PAGE + "']")
       .classList.add("active");
-      
+
   populateNav();
   setRandomCSSColors(3);
   populateContent();
@@ -41,13 +41,29 @@ title.addEventListener("click", togglePages);
 let langButton = document.querySelector("#language-toggle");
 langButton.addEventListener("click", toggleLanguage);
 
+fetchMDData("about");
 // ------ functions ------
 
 async function fetchData() {
-  let data = await fetch("content-" + LANG + ".json");
+  let data = await fetch("snippets/content-" + LANG + ".json");
   let json = await data.json();
 
   return json;
+}
+
+async function fetchMDData(slug) {
+  if (slug == "") return "";
+  let data = await fetch(
+    "https://raw.githubusercontent.com/schnavy/openbooksociety/develop/pages/" +
+      slug +
+      "-" +
+      LANG +
+      ".md"
+  );
+  let text = await data.text();
+  let html = MarkdownToHtml.parse(text);
+  html = html.replaceAll(/\\/g, "<br/>");
+  return html;
 }
 
 function toggleLanguage() {
@@ -95,8 +111,8 @@ async function populateNav() {
 }
 
 async function populateContent() {
-  let data = await fetchData();
-  setContentofID("#text-content", data.content[PAGE]);
+  let data = await fetchMDData(PAGE);
+  setContentofID("#text-content", data);
   document.querySelector("#text-content").classList = PAGE;
 }
 
