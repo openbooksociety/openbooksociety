@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
     document
       .querySelector("[data-href='" + PAGE + "']")
       .classList.add("active");
-      
+
   populateNav();
   setRandomCSSColors(3);
   populateContent();
@@ -41,6 +41,7 @@ title.addEventListener("click", togglePages);
 let langButton = document.querySelector("#language-toggle");
 langButton.addEventListener("click", toggleLanguage);
 
+fetchMDData("about");
 // ------ functions ------
 
 async function fetchData() {
@@ -48,6 +49,14 @@ async function fetchData() {
   let json = await data.json();
 
   return json;
+}
+
+async function fetchMDData(slug) {
+  let data = await fetch("content/" + slug + "-" + LANG + ".md");
+  let text = await data.text();
+
+  console.log(text);
+  return text;
 }
 
 function toggleLanguage() {
@@ -95,8 +104,8 @@ async function populateNav() {
 }
 
 async function populateContent() {
-  let data = await fetchData();
-  setContentofID("#text-content", data.content[PAGE]);
+  let data = await fetchMDData(PAGE);
+  setContentofID("#text-content", data);
   document.querySelector("#text-content").classList = PAGE;
 }
 
