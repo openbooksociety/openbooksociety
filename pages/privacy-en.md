@@ -43,5 +43,6 @@ Wenn wir personenbezogene Daten von Ihnen verarbeiten, haben Sie folgende Betrof
 - ein Widerspruchsrecht gegen eine Verarbeitung im öffentlichen oder bei berechtigtem Interesse,
 - ein Recht auf Datenübertragbarkeit,
 - ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde, wenn Sie finden, dass wir Ihre Daten nicht ordnungsgemäß verarbeiten. Für unseren Verein ist der Sächsische Datenschutzbeauftragte zuständig. Wenn Sie sich in einem anderen Bundesland oder nicht in Deutschland aufhalten, können Sie sich aber auch an die dortige Datenschutzbehörde wenden.  
-\
+  
+  
 Dieser Text wurde mit dem Generator für Datenschutzhinweise der [Stiftung Datenschutz](https://stiftungdatenschutz.org/ehrenamt/generator-datenschutzhinweise) erstellt.
