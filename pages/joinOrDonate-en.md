@@ -11,5 +11,5 @@ Verein zur Förderung von Grafik und Buchkunst Leipzig e.V.
 IBAN: DE94 8608 0000 0121 4275 00  
 BIC: DRESDEFF860 (Commerzbank)
 <br/>
-Via PayPal (please choose the “Friends and Family” option):
+Via PayPal (please choose the “Friends and Family” option):  
 [Donate](https://paypal.me/openbooksociety)
