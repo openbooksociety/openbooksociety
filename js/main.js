@@ -62,7 +62,7 @@ async function fetchMDData(slug) {
   );
   let text = await data.text();
   let html = MarkdownToHtml.parse(text);
-  console.log(html);
+  html = html.replaceAll(/\\/g, "<br/>");
   return html;
 }
 
