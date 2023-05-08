@@ -7,7 +7,7 @@ I would like to support the open book society e.V. and hereby give notice that I
 <br/>
 Donations and Membership Fees
 
-<br/>
+<br/><br/>
 By bank transfer please to (the new name is official shortly):  
 Verein zur Förderung von Grafik und Buchkunst Leipzig e.V.  
 IBAN: DE94 8608 0000 0121 4275 00  
