@@ -1,7 +1,7 @@
 Mitgliedsantrag  
 \
 Ich möchte die open book society e.V. unterstützen und erkläre hiermit meinen Beitritt zum Verein.  
-→[Beitreten](https://forms.gle/cbyK2GpbFPEC9jvG9)  
+→ [Beitreten](https://forms.gle/cbyK2GpbFPEC9jvG9)  
 \
 \
 Spenden und Mitgliedsbeiträge  
@@ -12,4 +12,4 @@ IBAN: DE94 8608 0000 0121 4275 00
 BIC: DRESDEFF860 (Commerzbank)  
 \
 Per Paypal (bitte „Familie und Freunde“-Option wählen):  
-→[Spenden](https://paypal.me/openbooksociety)
+→ [Spenden](https://paypal.me/openbooksociety)
