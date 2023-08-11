@@ -1,13 +1,13 @@
-Privacy Notice according to Art. 13 GDPR 
+Privacy Notice according to Art. 13 GDPR  
 \
-Data Controller 
+Data Controller  
 \
-open book society e.V. 
+open book society e.V.  
 \
-Academy of Visual Arts Leipzig 
-Wächsterstraße 11 
-D-04107 Leipzig 
-Email: mail@openbooksociety.de 
+Academy of Visual Arts Leipzig  
+Wächsterstraße 11  
+D-04107 Leipzig  
+Email: mail@openbooksociety.de  
 \
 For inquiries regarding data protection, you can reach us at mail@openbooksociety.de or at the postal address provided above. 
 \
