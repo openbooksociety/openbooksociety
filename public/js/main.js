@@ -41,7 +41,6 @@ title.addEventListener("click", togglePages);
 let langButton = document.querySelector("#language-toggle");
 langButton.addEventListener("click", toggleLanguage);
 
-fetchMDData("about");
 // ------ functions ------
 
 async function fetchData() {
