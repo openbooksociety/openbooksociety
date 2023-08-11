@@ -1,4 +1,3 @@
-Test
 Die open book society ist ein Verein, der zeitgenössische Gestaltung von Publikationen und Formen unabhängigen Publizierens sowie den Diskurs kritischer Buchästhetik fördert, vermittelt und öffentlich macht. Der Verein ist offen für alle und lädt alle Interessierten ein, mitzumachen.  
 \
 Die open book society geht aus dem 1992 gegründeten Verein zur Förderung von Grafik und Buchkunst Leipzig hervor. Jener wurde gegründet, um den Walter-Tiemann-Preis auszuloben, eine Auszeichnung für innovative typografische Buchgestaltung. Der seit 2000 aktive Vorstand des Vereins wurde im Sommer 2022 mit herzlichem Dank für sein Engagement verabschiedet: Julia Blume (Vorsitzende), Florian Hardwig (stellv. Vorsitzender) und Karla Fiedler (Schatzmeisterin).  

@@ -53,7 +53,7 @@ async function fetchData() {
 async function fetchMDData(slug) {
   if (slug == "") return "";
   let data = await fetch(
-    "https://raw.githubusercontent.com/schnavy/openbooksociety/develop/pages/" +
+    "https://raw.githubusercontent.com/schnavy/openbooksociety/main/pages/" +
       slug +
       "-" +
       LANG +
