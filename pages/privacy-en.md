@@ -1,48 +1,46 @@
-Datenschutzhinweise gemäß Art. 13 DSGVO  
+Privacy Notice according to Art. 13 GDPR
 \
-Verantwortliche Stelle  
+Data Controller
 \
-open book society e.V.  
+open book society e.V.
 \
-Hochschule für Grafik und Buchkunst Leipzig  
-Wächsterstraße 11  
-D-04107 Leipzig  
+Academy of Visual Arts Leipzig
+Wächsterstraße 11
+D-04107 Leipzig
+Email: mail@openbooksociety.de
 \
-mail@openbooksociety.de  
+For inquiries regarding data protection, you can reach us at mail@openbooksociety.de or at the postal address provided above.
 \
-Bei Fragen zum Datenschutz stehen wir Ihnen unter mail@openbooksociety.de oder unter der oben angegebenen postalischen Anschrift zur Verfügung.  
+Data Processing on Our Website and Other Online Offerings
 \
-Datenverarbeitung auf unserer Webseite und weiteren Online-Angeboten  
+Log Files When Accessing Our Website
 \
-Logfiles beim Aufruf unserer Webseite  
+When accessing our website, log files are created for the analysis of errors and security incidents. These are stored for only a few days to weeks and are then automatically deleted.
 \
-Bei Aufruf unserer Webseite werden zur Analyse von Fehlern und Sicherheitsvorfällen Logfiles erstellt. Diese bleiben nur für einige Tage bis Wochen gespeichert und werden anschließend automatisch gelöscht.  
+Data Processing within the Scope of Our Association's Activities
 \
-Datenverarbeitung im Rahmen unserer Vereinsarbeit  
+Member Administration
 \
-Mitgliederverwaltung  
+Member data (name, address, email address) are processed by the respective officers of our association only for the performance of their assigned tasks. In detail, this means:
 \
-Mitgliedsdaten (Name, Adresse, Emailadresse ) werden von den jeweiligen Funktionsträger:innen unseres Vereins nur für die ihnen zugeordnete Aufgabenerfüllung verarbeitet. Im Einzelnen bedeutet dies:  
-- Wenn der Vorstand Mitgliedsdaten benötigt, um seine Aufgaben zu erledigen, darf er auf alle hierfür erforderlichen Mitgliedsdaten zugreifen. Dazu gehört insbesondere die Mitgliederverwaltung.
-- Der/die Kassenwart:in verarbeitet die Mitgliedsdaten, die für den Einzug der Mitgliedsbeiträge, der/die Kassenprüfer:in verarbeitet die Mitgliedsdaten, die für die Kassenprüfung relevant sind. Dies sind Vorname, Nachname, postalische Anschrift und Bankverbindung mit Zahlungsdaten sowie ggf. Zugriff auf die Lastschriftsverfahrensgenehmigung inklusive Unterschrift, sofern das Mitglied dem Verein ein Lastschriftmandat erteilt hat.  
-  
-  
-
-Zweck für die Verarbeitung der Mitgliedsdaten ist die Verfolgung des Vereinszwecks und die -verwaltung. Rechtsgrundlage ist die Vereinsmitgliedschaft (Artikel 6 Absatz 1 b) DSGVO).  
+- When the board requires member data to fulfill its tasks, they are allowed to access all necessary member data. This includes, in particular, member administration.
+- The treasurer processes member data required for collecting membership fees, and the auditor processes member data relevant to financial audits. This includes first name, last name, postal address, and bank details with payment information, as well as, if applicable, access to the direct debit authorization including signature, provided the member has granted a direct debit mandate to the association.
 \
-Die aktuellen Mitgliedsdaten werden für die Dauer der Mitgliedschaft und darüber hinaus für unbegrenzt gespeichert.  
+The purpose of processing member data is the pursuit and administration of the association's purpose. The legal basis is the association membership (Article 6(1)(b) GDPR).
 \
-Betroffenenrechte  
+The current member data is stored for the duration of the membership and beyond, without limitation.
 \
-Wenn wir personenbezogene Daten von Ihnen verarbeiten, haben Sie folgende Betroffenenrechte:  
-- ein Recht auf Auskunft über die verarbeiteten Daten und auf Kopie,
-- ein Berichtigungsrecht, wenn wir falsche Daten über Sie verarbeiten,
-- ein Recht auf Löschung, es sei denn, dass noch Ausnahmen greifen, warum wir die Daten noch speichern, also zum Beispiel Aufbewahrungspflichten oder Verjährungsfristen
-- ein Recht auf Einschränkung der Verarbeitung,
-- ein jederzeitiges Recht, Einwilligungen in die Datenverarbeitung zu widerrufen,
-- ein Widerspruchsrecht gegen eine Verarbeitung im öffentlichen oder bei berechtigtem Interesse,
-- ein Recht auf Datenübertragbarkeit,
-- ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde, wenn Sie finden, dass wir Ihre Daten nicht ordnungsgemäß verarbeiten. Für unseren Verein ist der Sächsische Datenschutzbeauftragte zuständig. Wenn Sie sich in einem anderen Bundesland oder nicht in Deutschland aufhalten, können Sie sich aber auch an die dortige Datenschutzbehörde wenden.  
-  
-  
-Dieser Text wurde mit dem Generator für Datenschutzhinweise der [Stiftung Datenschutz](https://stiftungdatenschutz.org/ehrenamt/generator-datenschutzhinweise) erstellt.
+Rights of Data Subjects
+\
+If we process personal data concerning you, you have the following rights as data subjects:
+\
+- The right to information about the processed data and to a copy thereof,
+- The right to rectification in case we process incorrect data about you,
+- The right to erasure, unless there are exceptions justifying the continued storage of data, such as legal retention obligations or statute of limitations,
+- The right to restriction of processing,
+- The right to revoke consent to data processing at any time,
+- The right to object to processing based on public interest or legitimate interest,
+- The right to data portability,
+- The right to lodge a complaint with a data protection supervisory authority if you believe that we are not processing your data properly. For our association, the Saxon Data Protection Officer is responsible. However, if you are located in a different federal state or not in Germany, you can also contact the data protection authority there.
+\
+This text was created using the Privacy Notice Generator of the [Stiftung Datenschutz](https://stiftungdatenschutz.org/ehrenamt/generator-datenschutzhinweise).
