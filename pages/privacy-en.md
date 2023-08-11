@@ -1,6 +1,5 @@
 Privacy Notice according to Art. 13 GDPR  
-\
-Data Controller  
+
 \
 open book society e.V.  
 \
