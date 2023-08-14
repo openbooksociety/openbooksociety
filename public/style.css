@@ -174,7 +174,6 @@ a.nav-link {
     font-size: 4.8vw;
     letter-spacing: -3px;
     position: sticky;
-    top: var(--headerTopMargin);
     line-height: 4.2vw;
     height: -webkit-min-content;
     height: -moz-min-content;
