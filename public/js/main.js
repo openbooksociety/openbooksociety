@@ -27,7 +27,7 @@ if (!isTouchDevice()) {
 }
 document.addEventListener("scroll", (e) => {
     console.log(window.scrollY)
-    if (window.scrollY < 10) {
+    if (window.scrollY < 15) {
         unstackMenu()
     } else {
         stackMenu()
