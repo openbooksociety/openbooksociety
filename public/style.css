@@ -122,7 +122,7 @@ a.nav-link {
     -ms-grid-rows: min-content 10px 1fr 10px min-content;
     grid-template-rows: min-content 1fr min-content;
     gap: 20px;
-    padding: 30px;
+    padding: 24px;
 }
 
 .section.left {
@@ -298,7 +298,7 @@ a.nav-link {
 
 #header-text-container {
     position: fixed;
-    inset: 35px;
+    inset: 29px;
     padding: 0 6.3vw;
     font-size: var(--font-size-xs);
     line-height: 110%;
