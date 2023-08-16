@@ -1,7 +1,7 @@
 open book society e.V.  
 \
 Hochschule für Grafik und Buchkunst Leipzig  
-Wächterstrasse 11  
+Wächterstrasse 11
 D-04107 Leipzig  
 \
 [mail@openbooksociety.de](mailto:mail@openbooksociety.de)  
