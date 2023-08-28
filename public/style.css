@@ -93,14 +93,25 @@ a.nav-link {
 
 #text-content a {
     display: inline-block;
+    position: relative;
 }
 
 #text-content a::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
     content: "";
     display: block;
     height: 3px;
     border-radius: 100px;
     background-color: black;
+}
+
+@media (max-width: 999px) {
+    #text-content a::after {
+        height: 2px;
+    }
 }
 
 /*#text-content a::before {
@@ -166,7 +177,7 @@ a.nav-link {
     position: absolute;
 }
 
-.header-wrapper{
+.header-wrapper {
     display: contents;
 }
 
