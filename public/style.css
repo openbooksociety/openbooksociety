@@ -24,11 +24,19 @@
     --headerTopMargin: 15px;
     --header-lineHeight: 4.2vw;
     --font-size-xs: 0.9rem;
-    --font-size-sm: 1.1rem;
-    --font-size-md: 1.4rem;
+    --font-size-sm: 1rem;
+    --font-size-md: 1.2rem;
 
     --font-size-mobile-nav: 9vw;
     --line-height-mobile-nav: 10vw;
+}
+
+@media (min-width: 1400px) {
+    :root {
+        --font-size-xs: 1.2rem;
+        --font-size-sm: 1.2rem;
+        --font-size-md: 1.5rem;
+    }
 }
 
 * {
@@ -75,7 +83,7 @@ a:hover {
 
 .link,
 a.nav-link {
-    cursor: pointer;
+    cursor: pointer !important;
     display: block;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -156,7 +164,7 @@ a.nav-link {
     left: 0;
     grid-area: content;
     font-size: var(--font-size-md);
-    line-height: 1.8rem;
+    line-height: 130%;
 }
 
 @media (min-width: 1000px) {
@@ -439,7 +447,7 @@ a.nav-link {
 
 @media (max-width: 999px) {
     .content-grid {
-        min-height: 100vh;
+        min-height: 100dvh;
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         -ms-grid-rows: -webkit-min-content -webkit-min-content 1fr -webkit-min-content;
