@@ -49,8 +49,11 @@ subNavLinks.forEach((elem) => {
 let title = document.querySelector(".header.title");
 title.addEventListener("click", togglePages);
 
-let langButton = document.querySelector("#language-toggle");
+let langButton = document.querySelector("#language-toggle-desktop");
 langButton.addEventListener("click", toggleLanguage);
+
+let langButtonMobile = document.querySelector("#language-toggle-mobile");
+langButtonMobile.addEventListener("click", toggleLanguage);
 
 // ------ functions ------
 
@@ -118,7 +121,8 @@ async function populateNav() {
     setContentofID("#header-text-container-mobile", data.general.header);
     setContentofID("#members-link", data.nav.members);
     setContentofID("#join-link", data.nav.joinOrDonate);
-    setContentofID("#language-toggle", data.general.navLanguage);
+    setContentofID("#language-toggle-mobile", data.general.navLanguage);
+    setContentofID("#language-toggle-desktop", data.general.navLanguage);
     setContentofID("#about-link", data.nav.about);
     setContentofID("#imprint-link", data.nav.imprint);
     setContentofID("#privacy-link", data.nav.privacy);
