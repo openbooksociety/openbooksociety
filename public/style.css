@@ -103,6 +103,7 @@ a.nav-link {
 #text-content a {
     display: inline-block;
     position: relative;
+    z-index: 10;
 }
 
 #text-content a::after {
