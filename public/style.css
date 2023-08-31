@@ -203,6 +203,7 @@ a.nav-link {
 
 .header.title {
     grid-area: title;
+    top: var(--headerTopMargin);
 }
 
 .header.menu {
