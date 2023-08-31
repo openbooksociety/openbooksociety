@@ -1,32 +1,33 @@
-let LANG = "en";
+let LANG = localStorage.getItem("lang") || "en";
 let PAGE = "";
 
 let r = document.querySelector(":root");
 
 window.addEventListener("load", () => {
+
     PAGE = window.location.hash.replaceAll("#", "");
-    console.log(PAGE);
-    if (PAGE != "") {
+
+    if (PAGE !== "") {
         document.querySelector("body").className = PAGE;
         document
             .querySelector("[data-href='" + PAGE + "']")
             .classList.add("active");
     }
 
-    populateNav();
+    populateNav().catch(err => console.error(err));
     setRandomCSSColors(3);
-    populateContent();
+    populateContent().catch(err => console.error(err));
 });
 
 let menu = document.querySelector(".header.menu");
+
 if (!isTouchDevice()) {
     menu.addEventListener("mouseenter", unstackMenu);
     menu.addEventListener("mouseleave", stackMenu);
 } else {
     unstackMenu()
 }
-document.addEventListener("scroll", (e) => {
-    console.log(window.scrollY)
+document.addEventListener("scroll", () => {
     if (window.scrollY < 15) {
         unstackMenu()
     } else {
@@ -59,13 +60,12 @@ langButtonMobile.addEventListener("click", toggleLanguage);
 
 async function fetchSnippetData() {
     let data = await fetch("snippets/content-" + LANG + ".json");
-    let json = await data.json();
-
-    return json;
+    return await data.json();
 }
 
 async function fetchMDData(slug) {
-    if (slug == "") return "";
+    if (slug === "") return "";
+
     let data = await fetch(
         "https://raw.githubusercontent.com/schnavy/openbooksociety/main/pages/" +
         slug +
@@ -73,23 +73,23 @@ async function fetchMDData(slug) {
         LANG +
         ".md"
     );
+
     let text = await data.text();
     let html = MarkdownToHtml.parse(text);
-    html = html.replaceAll(/\\/g, "<br/>");
-    return html;
+    return html.replaceAll(/\\/g, "<br/>");
 }
 
 function toggleLanguage() {
     LANG = LANG === "de" ? "en" : "de";
-    populateNav();
-    populateContent();
+    localStorage.setItem("lang", LANG);
+    populateNav().catch(err => console.error(err));
+    populateContent().catch(err => console.error(err));
 }
 
 function togglePages(e) {
     if (!e.target.classList.contains("link")) return;
 
     PAGE = e.target.getAttribute("data-href");
-    console.log(PAGE);
 
     navLinks.forEach((elem, i) => {
         if (elem === e.target)
@@ -103,7 +103,7 @@ function togglePages(e) {
     document.querySelector("body").className = PAGE;
 
     e.target.classList.add("active");
-    populateContent();
+    populateContent().catch(err => console.error(err));
     window.scrollTo(0, 0)
 }
 
@@ -117,25 +117,25 @@ function stackMenu() {
 
 async function populateNav() {
     let data = await fetchSnippetData();
-    setContentofID("#header-text-container", data.general.header);
-    setContentofID("#header-text-container-mobile", data.general.header);
-    setContentofID("#members-link", data.nav.members);
-    setContentofID("#join-link", data.nav.joinOrDonate);
-    setContentofID("#language-toggle-mobile", data.general.navLanguage);
-    setContentofID("#language-toggle-desktop", data.general.navLanguage);
-    setContentofID("#about-link", data.nav.about);
-    setContentofID("#imprint-link", data.nav.imprint);
-    setContentofID("#privacy-link", data.nav.privacy);
+    setContentOfID("#header-text-container", data.general.header);
+    setContentOfID("#header-text-container-mobile", data.general.header);
+    setContentOfID("#members-link", data.nav.members);
+    setContentOfID("#join-link", data.nav.joinOrDonate);
+    setContentOfID("#language-toggle-mobile", data.general.navLanguage);
+    setContentOfID("#language-toggle-desktop", data.general.navLanguage);
+    setContentOfID("#about-link", data.nav.about);
+    setContentOfID("#imprint-link", data.nav.imprint);
+    setContentOfID("#privacy-link", data.nav.privacy);
 }
 
 async function populateContent() {
     let data = await fetchMDData(PAGE);
-    setContentofID("#text-content", data);
+    setContentOfID("#text-content", data);
     document.querySelector("#text-content").classList = PAGE;
 }
 
-function setContentofID(id, content) {
-    document.querySelector(id).innerHTML = content != undefined ? content : "";
+function setContentOfID(id, content) {
+    document.querySelector(id).innerHTML = content !== undefined ? content : "";
 }
 
 function setRandomCSSColors(amount) {
