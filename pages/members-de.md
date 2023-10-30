@@ -7,9 +7,11 @@ Jan Blessing
 Julia Blume  
 Prof. Günter Karl Bose  
 Prof. Johann Böhme  
+Anna Breit  
 Fabian Bremer  
 Prof. Joachim Brohm  
 Kristina Brusa  
+Anne Dietzsch  
 Prof. Markus Dreßen  
 Karla Fiedler  
 Albrecht Gäbel  
@@ -22,12 +24,14 @@ Marion Kliesch
 Katharina Köhler  
 Maria Magdalena Koehn  
 Emil Kowalczyk  
+Jim Kühnel  
 Florian Lamm  
 Ricarda Löser  
 Johannes Oestringer  
 Helene Otto  
 Merle Petsch  
 Matilda Plöjel  
+Winnes Rademächers  
 Alexandra Rusitschka  
 Sanna Schiffler  
 Hans-Hinnark Schmedt  
