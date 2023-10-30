@@ -1,7 +1,7 @@
 Dona Abboud   
-Jona Caspar Bähr
-Johannes Bergerhausen
-Jonas Beuchert
+Jona Caspar Bähr   
+Johannes Bergerhausen   
+Jonas Beuchert   
 Marion Blomeyer 
 Jan Blessing  
 Julia Blume  
