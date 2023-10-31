@@ -1,0 +1,22 @@
+:root {
+    --0: #ffc145;
+    --1: #dd1c1a;
+    --2: #41bbd9;
+    --link-color: #ffc145;
+    --headerTopMargin: 15px;
+    --header-lineHeight: 4.2vw;
+    --font-size-xs: 0.9rem;
+    --font-size-sm: 1rem;
+    --font-size-md: 1.2rem;
+
+    --font-size-mobile-nav: 9vw;
+    --line-height-mobile-nav: 10vw;
+}
+
+@media (min-width: 1400px) {
+    :root {
+        --font-size-xs: 1.2rem;
+        --font-size-sm: 1.2rem;
+        --font-size-md: 1.5rem;
+    }
+}
