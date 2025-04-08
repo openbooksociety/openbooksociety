@@ -11,7 +11,7 @@ Development: David Wahrenburg
 Design: Emil Kowalczyk, Merle Petsch  
 \
 Association  
-Board of Directors: Katharina Köhler (Chair), Dr. Sabine Schmid (Deputy Chair), Albrecht Gäbel (Treasurer)  
+Board of Directors: Jan Blessing, Markus Dreßen, Katharina Köhler, Johannes Oestringer, Helene Otto, Andrea Tinnes, Sabine Schmid, Sebastian A. Schmitt  
 \
 Registration court: Amtsgerichtes Leipzig  
 Association register number: VR 2994
