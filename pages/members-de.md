@@ -1,35 +1,19 @@
-Dona Abboud
-Jona Caspar Bähr
-Rebekka Bauer
-Johannes Bergerhausen
-Jonas Beuchert
-Jan Blessing
-Marion Blomeyer
-Julia Blume
-Prof. Johann Böhme
-Moritz Borchardt
-Prof. Günter Karl Bose
-Lorraine Bougeard
-Anna Breit
-Fabian Bremer
-Prof. Joachim Brohm
-Pascal Brun
-Kristina Brusa
-Benjamin Buchegger
-Pia Christmann
-Santiago da Silva
 Anne Dietzsch
-Doeller Sandra
+Sandra Doeller
+Prof. Markus Dreßen
 Leonhard Fuchs
-Albrecht Gäbel
+Albrecht  Gäbel
 Stuart Geddes
 Verena Gerlach
 Nina Glockner
-Göldner Maurice
+Maurice Göldner
+Roman Gornitsky
 Charlotte Gosch
+Anna Haifisch
 Florian Hardwig
-Constanze Hein
 Julia Kahl
+Anja Kaiser
+Christian Kasners
 Benjamin Kivikoski
 Stephanie Kiwitt
 Marion Kliesch
@@ -40,22 +24,22 @@ Sophia Krayc
 Jim Kühnel
 Florian Lamm
 Olivier Lebrun
-Ph.D. Ricarda Löser
+Luka Löhner
 Stefan Maneval
-Prof. Markus Dreßen 
+Siyu Mao
+Carla Selva Matthes
 Maria Magdalena Meyer
 Franziska Morlok
-Prof. Fraser Muggeridge
+Prof. Fraser  Muggeridge 
 Márcia Novais
 Johannes Oestringer
 Prof. Ingo Offermanns
 Helene Otto
+Pierre Pané-Farré
 Merle Petsch
 Matilda Plöjel
 Winnes Rademächers
-Ann Richter
-Anna Rieger
-Natascha J.A. Rodenburg
+Jana Reddemann
 Daniel Rother
 Anna Rosa Rupp
 Alexandra Rusitschka
@@ -64,6 +48,7 @@ Hans-Hinnark Schmedt
 Dr. Sabine Schmid
 Sebastian A. Schmitt
 Uta Schneider
+Paula Schneider
 David Schnell
 Yvonne Schürer
 Marie Schuster
@@ -72,15 +57,16 @@ Wolfgang Schwärzler
 Johanna Siebein
 Lea Sievertsen
 Pascal Storz
-Prof. Andrea Tinnes 
+(Ann Richter, Pia Christmann) Studio Pandan
+Prof. Andrea  Tinnes
 Anna-Lena von Helldorff
 Edwin van Gelder
 Boy Vereecken
 David Voss
 Dirk Wachowiak
 Ian Waelder
-Felix Walser
 Matthias Weischer
 Edwin Yew
 Mira Ying
+Paul Zech
 Rahel Zoller
