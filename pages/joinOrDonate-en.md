@@ -13,6 +13,5 @@ BIC: GENODEF1SLR (Deutsche Skatbank)
 \
 Via PayPal (please choose the “Friends and Family” option):  
 → [Donate](https://paypal.me/openbooksociety)
-
-
+\
 Donations and membership fees of up to 300 euros can be submitted to the german tax office without an official donation receipt (donation receipt) using the payment slip for the transfer (e.g. a bank statement). 
