@@ -13,3 +13,5 @@ BIC: GENODEF1SLR (Deutsche Skatbank)
 \
 Per Paypal (bitte „Familie und Freunde“-Option wählen):  
 → [Spenden](https://paypal.me/openbooksociety)
+
+Spenden und Mitgliedsbeiträge bis zu 300 Euro können ohne amtliche Spendenquittung (Zuwendungsbestätigung) mit dem Einzahlungsbeleg der Überweisung (z.B. einem Kontoauszug) beim Finanzamt eingereicht werden.
