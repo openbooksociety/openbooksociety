@@ -1,10 +1,17 @@
+Support us – every contribution helps to make our funding formats possible.
+\
+\
 Membership request  
+\
+Eine Mitgliedschaft ist mit einem jährlichen Beitrag von 48 Euro möglich. Wer uns darüber hinaus unterstützen möchte, kann als Fördermitglied eine zusätzliche Spende leisten – und mit einer Spende ab 952 Euro werdet ihr Teil unseres Kreises der Ehrenfördermitglieder.
 \
 I would like to support the open book society e.V. and hereby give notice that I am joining the association.  
 → [Join](https://forms.gle/cbyK2GpbFPEC9jvG9)  
 \
 \
 Donations and Membership Fees  
+\
+Every contribution, whether one-off or regular, supports our work and enables us to develop our formats further.
 \
 By bank transfer please to:  
 open book society e.V.    
