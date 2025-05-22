@@ -1,10 +1,17 @@
+Unterstützt uns – jeder Beitrag hilft, unsere Förderformate möglich zu machen.
+\
+\
 Mitgliedsantrag  
 \
+Eine Mitgliedschaft ist mit einem jährlichen Beitrag von 48 Euro möglich. Wer uns darüber hinaus unterstützen möchte, kann als Fördermitglied eine zusätzliche Spende leisten – und mit einer Spende ab 952 Euro werdet ihr Teil unseres Kreises der Ehrenfördermitglieder.
+
 Ich möchte die open book society e.V. unterstützen und erkläre hiermit meinen Beitritt zum Verein.  
 → [Beitreten](https://forms.gle/cbyK2GpbFPEC9jvG9)  
 \
 \
 Spenden und Mitgliedsbeiträge  
+\
+Ob einmalig oder regelmäßig – jeder Beitrag unterstützt unsere Arbeit und ermöglicht es unsere Formate weiterzuentwickeln. 
 \
 Per Überweisung bitte an:  
 open book society e.V.    
