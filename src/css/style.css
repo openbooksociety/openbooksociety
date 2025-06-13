@@ -34,7 +34,7 @@ a {
     color: black;
 }
 
-a:hover {
+a:hover, button:hover {
     text-decoration: none !important;
     color: black;
     font-style: italic;
@@ -55,17 +55,17 @@ a.nav-link {
     font-style: normal;
 }
 
-#text-content a:hover {
+#text-content a:hover, button:hover {
     letter-spacing: -0.0035rem;
 }
 
-#text-content a {
+#text-content a, button{
     display: inline-block;
     position: relative;
     z-index: 10;
 }
 
-#text-content a::after {
+#text-content a::after, button::after {
     position: absolute;
     left: 0;
     right: 0;
@@ -78,7 +78,7 @@ a.nav-link {
 }
 
 @media (max-width: 999px) {
-    #text-content a::after {
+    #text-content a::after, button::after {
         height: 2px;
     }
 }
@@ -538,6 +538,18 @@ a.nav-link {
         transform: translateY(calc(var(--line-height-mobile-nav) * -2));
     }
 
+    .header.menu.stacked a:nth-child(5) {
+        -webkit-transform: translateY(calc(var(--line-height-mobile-nav) * -4));
+        -ms-transform: translateY(calc(var(--line-height-mobile-nav) * -4));
+        transform: translateY(calc(var(--line-height-mobile-nav) * -4));
+    }
+
+    .header.menu.stacked a:nth-child(5).active {
+        -webkit-transform: translateY(calc(var(--line-height-mobile-nav) * -3));
+        -ms-transform: translateY(calc(var(--line-height-mobile-nav) * -3));
+        transform: translateY(calc(var(--line-height-mobile-nav) * -3));
+    }
+
     #arrow {
         position: absolute;
         left: 65vw;
@@ -594,7 +606,7 @@ a.nav-link {
     }
 
     #text-content {
-        margin-top: calc(var(--line-height-mobile-nav) * 6);
+        margin-top: calc(var(--line-height-mobile-nav) * 7);
     }
 }
 

@@ -69,7 +69,9 @@ function handleNavLinkClick(e) {
 }
 
 async function fetchSnippetData() {
-    let data = await fetch(`src/snippets/content-${LANG}.json`);
+    /* local */
+    /* let data = await fetch(`src/snippets/content-${LANG}.json`);*/
+    let data = await fetch(`https://raw.githubusercontent.com/schnavy/openbooksociety/main/src/snippets/content-${LANG}.json`);
     return await data.json();
 }
 
@@ -83,7 +85,10 @@ async function fetchMDData(slug) {
 
 async function fetchHTMLData(slug) {
     if (slug === "") return "";
-    let data = await fetch(`src/html/${slug}.html`);
+    /* local */
+    /*let data = await fetch(`src/html/${slug}.html`);*/
+    let data = await fetch(`https://raw.githubusercontent.com/schnavy/openbooksociety/main/src/html/${slug}.html`);
+
     return await data.text();
 }
 
