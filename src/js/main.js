@@ -207,12 +207,13 @@ function initializeNewsletterForm(snippets) {
         document.head.appendChild(script);
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
+    // Show form immediately since DOM is already ready
+    setTimeout(() => {
         const form = document.querySelector('.sib-form');
         if (form) {
             form.style.opacity = '1';
         }
-    })
+    }, 100);
 }
 
 function setContentOfID(id, content) {
