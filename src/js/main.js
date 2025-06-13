@@ -49,7 +49,7 @@ async function initializePage() {
 
     try {
         await populateNav();
-        setRandomCSSColors(3);
+        setRandomCSSColors(4);
         await populateContent();
     } catch (err) {
         console.error(err);
@@ -79,6 +79,12 @@ async function fetchMDData(slug) {
     let text = await data.text();
     let html = MarkdownToHtml.parse(text);
     return html.replaceAll(/\\/g, "<br/>");
+}
+
+async function fetchHTMLData(slug) {
+    if (slug === "") return "";
+    let data = await fetch(`src/html/${slug}-${LANG}.html`);
+    return await data.text();
 }
 
 function toggleLanguage() {
@@ -126,7 +132,15 @@ async function populateNav() {
 }
 
 async function populateContent() {
-    let data = await fetchMDData(PAGE);
+    let data;
+
+    // Check if this is the newsletter page - load HTML instead of markdown
+    if (PAGE === "newsletter") {
+        data = await fetchHTMLData(PAGE);
+    } else {
+        data = await fetchMDData(PAGE);
+    }
+
     setContentOfID("#text-content", data);
     document.querySelector("#text-content").classList = PAGE;
 }

@@ -214,6 +214,10 @@ a.nav-link {
         top: calc(var(--header-lineHeight) * 3);
     }
 
+    .header.menu a:nth-child(4) {
+        top: calc(var(--header-lineHeight) * 4);
+    }
+
     #language-toggle-mobile {
         display: none;
     }
@@ -245,6 +249,10 @@ a.nav-link {
     color: var(--2) !important;
 }
 
+#newsletter-link.active {
+    color: var(--3) !important;
+}
+
 @media (min-width: 1000px) {
     #about-link:hover {
         color: var(--0);
@@ -256,6 +264,10 @@ a.nav-link {
 
     #members-link:hover {
         color: var(--2);
+    }
+
+    #newsletter-link:hover {
+        color: var(--3);
     }
 }
 
