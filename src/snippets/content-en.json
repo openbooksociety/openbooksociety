@@ -11,5 +11,17 @@
     "newsletter": "Newsletter",
     "imprint": "Imprint",
     "privacy": "Privacy"
+  },
+  "newsletter": {
+    "description": "Subscribe to our newsletter to stay up to date.",
+    "emailLabel": "Enter your email address to subscribe",
+    "emailPlaceholder": "Email",
+    "submitButton": "Subscribe",
+    "successMessage": "Your subscription was successful.",
+    "errorMessage": "Your subscription could not be saved. Please try again.",
+    "requiredErrorMessage": "This field must not be empty.",
+    "emailInvalidMessage": "The information entered is not valid. Please check the field format and try again.",
+    "genericInvalidMessage": "The information entered is not valid. Please check the field format and try again.",
+    "codeErrorMessage": "Please select a country code."
   }
 }

@@ -11,5 +11,17 @@
     "newsletter": "Newsletter",
     "imprint": "Impressum",
     "privacy": "Datenschutz"
+  },
+  "newsletter": {
+    "description": "Melde dich zu unserem Newsletter an, um auf dem Laufenden zu bleiben.",
+    "emailLabel": "Gib deine E-Mail-Adresse ein, um dich anzumelden",
+    "emailPlaceholder": "E-Mail",
+    "submitButton": "Anmelden",
+    "successMessage": "Deine Anmeldung war erfolgreich.",
+    "errorMessage": "Deine Anmeldung konnte nicht gespeichert werden. Bitte versuche es erneut.",
+    "requiredErrorMessage": "Dieses Feld darf nicht leer sein.",
+    "emailInvalidMessage": "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.",
+    "genericInvalidMessage": "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.",
+    "codeErrorMessage": "Wähle bitte einen Ländervorwahl aus."
   }
 }

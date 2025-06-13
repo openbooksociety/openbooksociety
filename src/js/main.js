@@ -83,8 +83,30 @@ async function fetchMDData(slug) {
 
 async function fetchHTMLData(slug) {
     if (slug === "") return "";
-    let data = await fetch(`src/html/${slug}-${LANG}.html`);
+    let data = await fetch(`src/html/${slug}.html`);
     return await data.text();
+}
+
+function replaceTemplateVariables(template, snippets) {
+    // Replace template variables like {{newsletter.description}} with actual snippet values
+    return template.replace(/\{\{([^}]+)\}\}/g, (match, path) => {
+        if (path === 'LANG') {
+            return LANG;
+        }
+
+        const keys = path.split('.');
+        let value = snippets;
+
+        for (const key of keys) {
+            if (value && value[key] !== undefined) {
+                value = value[key];
+            } else {
+                return match; // Return original if path doesn't exist
+            }
+        }
+
+        return value;
+    });
 }
 
 function toggleLanguage() {
@@ -134,15 +156,58 @@ async function populateNav() {
 async function populateContent() {
     let data;
 
-    // Check if this is the newsletter page - load HTML instead of markdown
+    // Check if this is the newsletter page - load HTML template and replace variables
     if (PAGE === "newsletter") {
-        data = await fetchHTMLData(PAGE);
+        const template = await fetchHTMLData(PAGE);
+        const snippets = await fetchSnippetData();
+        data = replaceTemplateVariables(template, snippets);
+
+        // Set content first
+        setContentOfID("#text-content", data);
+        document.querySelector("#text-content").classList = PAGE;
+
+        // Then initialize newsletter form scripts
+        initializeNewsletterForm(snippets);
     } else {
         data = await fetchMDData(PAGE);
+        setContentOfID("#text-content", data);
+        document.querySelector("#text-content").classList = PAGE;
+    }
+}
+
+function initializeNewsletterForm(snippets) {
+    // Set up newsletter form JavaScript variables
+    window.REQUIRED_CODE_ERROR_MESSAGE = snippets.newsletter.codeErrorMessage;
+    window.LOCALE = LANG;
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = snippets.newsletter.emailInvalidMessage;
+    window.REQUIRED_ERROR_MESSAGE = snippets.newsletter.requiredErrorMessage;
+    window.GENERIC_INVALID_MESSAGE = snippets.newsletter.genericInvalidMessage;
+
+    window.translation = {
+        common: {
+            selectedList: '{quantity} Liste ausgewählt',
+            selectedLists: '{quantity} Listen ausgewählt',
+            selectedOption: '{quantity} ausgewählt',
+            selectedOptions: '{quantity} ausgewählt',
+        }
+    };
+
+    window.AUTOHIDE = Boolean(0);
+
+    // Load the Brevo form script dynamically
+    if (!document.querySelector('script[src*="sibforms.com"]')) {
+        const script = document.createElement('script');
+        script.src = 'https://sibforms.com/forms/end-form/build/main.js';
+        script.defer = true;
+        document.head.appendChild(script);
     }
 
-    setContentOfID("#text-content", data);
-    document.querySelector("#text-content").classList = PAGE;
+    document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector('.sib-form');
+        if (form) {
+            form.style.opacity = '1';
+        }
+    })
 }
 
 function setContentOfID(id, content) {
