@@ -162,6 +162,8 @@ async function populateNav() {
 }
 
 async function populateContent() {
+    const body = document.querySelector("body");
+    body.classList.add("loaded");
     let data;
 
     // Check if this is the newsletter page - load HTML template and replace variables
