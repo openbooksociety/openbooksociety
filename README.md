@@ -1,14 +1,15 @@
 # open book society e.V.
+Live at https://openbooksociety.de/
 
 ## Updating Page Content
 
-For main page content (About, Members, etc.), edit the markdown files in the `pages/` folder:
+For page content (About, Members, etc.), edit the language specific markdown files in the `pages/` folder:
 
 - `pages/about-en.md` / `pages/about-de.md`
 - `pages/members-en.md` / `pages/members-de.md`
 - etc.
 
-## Updating Wording of UI Elements & Newsletter
+## Updating UI Elements & Newsletter Form
 
 For navigation, buttons, form labels, and other UI text, edit the JSON files:
 
