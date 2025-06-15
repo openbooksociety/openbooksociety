@@ -5,6 +5,8 @@ const r = document.querySelector(":root");
 let LANG = localStorage.getItem("lang") || "en";
 let PAGE = "";
 
+const IS_PRODUCTION = window.location.hostname === "openbooksociety.de" || window.location.hostname === "www.openbooksociety.de";
+
 // ------ Event Listeners ------
 
 window.addEventListener("load", initializePage);
@@ -69,15 +71,16 @@ function handleNavLinkClick(e) {
 }
 
 async function fetchSnippetData() {
-    /* local */
-    /* let data = await fetch(`src/snippets/content-${LANG}.json`);*/
-    let data = await fetch(`https://raw.githubusercontent.com/schnavy/openbooksociety/main/src/snippets/content-${LANG}.json`);
+    let url = !IS_PRODUCTION ? `src/snippets/content-${LANG}.json` : `https://raw.githubusercontent.com/schnavy/openbooksociety/main/src/snippets/content-${LANG}.json`
+    console.log(url)
+    let data = await fetch(url);
     return await data.json();
 }
 
 async function fetchMDData(slug) {
     if (slug === "") return "";
-    let data = await fetch(`https://raw.githubusercontent.com/schnavy/openbooksociety/main/pages/${slug}-${LANG}.md`);
+    let url = !IS_PRODUCTION ? `pages/${slug}-${LANG}.md` : `https://raw.githubusercontent.com/schnavy/openbooksociety/main/pages/${slug}-${LANG}.md`
+    let data = await fetch(url);
     let text = await data.text();
     let html = MarkdownToHtml.parse(text);
     return html.replaceAll(/\\/g, "<br/>");
@@ -85,9 +88,9 @@ async function fetchMDData(slug) {
 
 async function fetchHTMLData(slug) {
     if (slug === "") return "";
-    /* local */
-    /*let data = await fetch(`src/html/${slug}.html`);*/
-    let data = await fetch(`https://raw.githubusercontent.com/schnavy/openbooksociety/main/src/html/${slug}.html`);
+    let url = !IS_PRODUCTION ? `src/html/${slug}.html` : `https://raw.githubusercontent.com/schnavy/openbooksociety/main/src/html/${slug}.html`
+    console.log(url)
+    let data = await fetch(url);
 
     return await data.text();
 }
