@@ -2,11 +2,11 @@ Anne Dietzsch
 Sandra Doeller
 Prof. Markus Dreßen
 Leonhard Fuchs
-Albrecht  Gäbel
+Albrecht Gäbel
 Stuart Geddes
 Verena Gerlach
 Nina Glockner
-Maurice Göldner
+Prof. Maurice Göldner
 Roman Gornitsky
 Charlotte Gosch
 Anna Haifisch
@@ -16,7 +16,7 @@ Anja Kaiser
 Christian Kasners
 Benjamin Kivikoski
 Stephanie Kiwitt
-Marion Kliesch
+Prof. Marion Kliesch
 Katharina Köhler
 Uta Kopp
 Emil Kowalczyk
@@ -30,16 +30,16 @@ Siyu Mao
 Carla Selva Matthes
 Maria Magdalena Meyer
 Franziska Morlok
-Prof. Fraser  Muggeridge 
+Prof. Fraser Muggeridge 
 Márcia Novais
 Johannes Oestringer
 Prof. Ingo Offermanns
 Helene Otto
-Pierre Pané-Farré
+Prof. Pierre Pané-Farré
 Merle Petsch
 Matilda Plöjel
 Winnes Rademächers
-Jana Reddemann
+Prof. Jana Reddemann
 Daniel Rother
 Anna Rosa Rupp
 Alexandra Rusitschka
@@ -54,19 +54,20 @@ Yvonne Schürer
 Marie Schuster
 Stefanie Schwarz
 Wolfgang Schwärzler
-Johanna Siebein
+Prof. Johanna Siebein
 Lea Sievertsen
 Pascal Storz
 (Ann Richter, Pia Christmann) Studio Pandan
-Prof. Andrea  Tinnes
-Anna-Lena von Helldorff
+Prof. Andrea Tinnes
+Prof. Anna-Lena von Helldorff
 Edwin van Gelder
 Boy Vereecken
-David Voss
-Dirk Wachowiak
+Prof. David Voss
+Prof. Dirk Wachowiak
 Ian Waelder
 Matthias Weischer
 Edwin Yew
 Mira Ying
 Paul Zech
 Rahel Zoller
+
