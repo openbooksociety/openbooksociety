@@ -15,7 +15,7 @@ Julia Kahl
 Anja Kaiser
 Christian Kasners
 Benjamin Kivikoski
-Stephanie Kiwitt
+Prof. Stephanie Kiwitt
 Prof. Marion Kliesch
 Katharina Köhler
 Uta Kopp
@@ -29,7 +29,7 @@ Stefan Maneval
 Siyu Mao
 Carla Selva Matthes
 Maria Magdalena Meyer
-Franziska Morlok
+Prof. Franziska Morlok
 Prof. Fraser Muggeridge 
 Márcia Novais
 Johannes Oestringer
