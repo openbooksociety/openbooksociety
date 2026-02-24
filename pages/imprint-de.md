@@ -11,7 +11,7 @@ Development: David Wahrenburg
 Design: Emil Kowalczyk, Merle Petsch  
 \
 Verein  
-Vorstand: Jan Blessing, Markus Dreßen, Katharina Köhler, Johannes Oestringer, Helene Otto, Andrea Tinnes, Sabine Schmid, Sebastian A. Schmitt
+Vorstand: Jan Blessing, Albrecht Gäbel, Katharina Köhler, Johannes Oestringer, Helene Otto, Andrea Tinnes, Sabine Schmid, Sebastian A. Schmitt
 \
 Registergericht: Amtsgerichtes Leipzig  
 Vereinsregister­nummer: VR 2994
