@@ -43,6 +43,7 @@ Prof. Jana Reddemann
 Daniel Rother
 Anna Rosa Rupp
 Alexandra Rusitschka
+Janine Sack
 Sanna Schiffler
 Hans-Hinnark Schmedt
 Dr. Sabine Schmid
